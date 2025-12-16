@@ -1,22 +1,27 @@
-## Linked issue
-- Fixes #<issue-number>
-- 
 ## What does this PR do?
-- 
+Briefly describe the changes
 
-## How to test
-- [ ] Added/updated tests for this change
+---
+
+## Linked issue (if any)
+- Fixes #<issue-number>
+  <!-- If this PR does not fully fix the issue, use "Refs #<issue-number>" -->
+
+---
 
 ## Checklist
-### Code style / guidelines
-- [ ] I ran formatting: `mvn com.coveo:fmt-maven-plugin:format`
 
-### Self review
-- [ ] I reviewed my own code
-- [ ] I updated documentation / javadoc where needed
-- [ ] I added/updated tests where needed
+### Code style & guidelines
+- [ ] I ran the formatter: `mvn com.spotify.fmt:fmt-maven-plugin:format`
+- [ ] I added the necessary comments in the code
+- [ ] I updated documentation (if needed)
+
+### Self-review
+- [ ] I performed a self-review of my code
+- [ ] I added or updated tests where needed
+- [ ] I have successfully run tests with your changes locally
 - [ ] My branch is up to date with `develop`
 
 ### Review
 - [ ] CI checks are green
-- [ ] I requested review from a core contributor
+- [ ] I requested a review from a core contributor
