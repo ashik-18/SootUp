@@ -138,6 +138,14 @@ public class ICFGDotExporterTest extends IFDSTaintTestSetUp {
     CallGraph callGraph = loadCallGraph(view);
     String expectedCallGraph = icfg.buildICFGGraph(callGraph);
     Digraph digraph = parseDigraph(expectedCallGraph);
+    List<String> methodsInCallGraph = new ArrayList<>();
+    callGraph.getMethodSignatures().forEach(m -> methodsInCallGraph.add(m.getName()));
+    List<String> methodsInIcfg = new ArrayList<>();
+    for (int i = 0; i < digraph.blocks.length; i++) {
+      methodsInIcfg.add(digraph.blocks[i].label);
+    }
+    assertTrue(
+            methodsInIcfg.stream().allMatch(m -> methodsInCallGraph.contains(m)));
     assertEquals(
         edgesFromCallGraph(entryMethodSignature, icfg, callGraph),
         String.join(" -> ", digraph.blocks[0].edges));
