@@ -143,6 +143,7 @@ public class ICFGDotExporterTest extends IFDSTaintTestSetUp {
         String.join(" -> ", digraph.blocks[0].edges));
   }
 
+//  demo comment
   @Test
   public void ICFGInterfaceDotExport() {
     List<AnalysisInputLocation> inputLocations = new ArrayList<>();
