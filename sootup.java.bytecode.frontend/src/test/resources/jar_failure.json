@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "dicebear__shapes-6.0.4.jar",
+  "exception": "java.lang.RuntimeException: Could not open file system of /tmp/tempDir13632240148134807868/dicebear__shapes-6.0.4.jar",
+  "download_url": "https://repo1.maven.org/maven2/org/webjars/npm/dicebear__shapes/6.0.4/dicebear__shapes-6.0.4.jar",
+  "failedMethodSignature": ""
+}
+]
